@@ -15,7 +15,7 @@ a {
 }
 
 body {
-  background-color: #184FDD;
+  background-color: #184fdd;
 }
 
 header {
@@ -25,34 +25,37 @@ header {
   width: 100%;
   justify-content: space-between;
   margin: 0 auto;
+  margin-bottom: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   align-items: center;
   box-shadow: 2px 2px 2px 1px #1b4ecf9a;
-  
 }
 
 header img {
-    margin-left: 1%;
+  margin-left: 1%;
+  margin-top: 10px;
 }
 
 header a {
-    margin-right: 1%;
+  margin-right: 1%;
 }
 
-header button{
-    padding: 10px 14px 10px 14px;
-    border-radius: 5px;
-    border: none;
-    background-color: #ffaa00;
+header button {
+  padding: 10px 14px 10px 14px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ffaa00;
 }
 
-header button:hover{
-    background-color: #fab833;
-    cursor: pointer;
+header button:hover {
+  background-color: #fab833;
+  cursor: pointer;
 }
 
 header button h4 {
-    font-size: 11pt;
-    color: white;
+  font-size: 11pt;
+  color: white;
 }
 
 nav {
@@ -62,29 +65,30 @@ nav {
 }
 
 .menu {
-    list-style: none;
-    border: 1px solid #c0c0c0;
-    margin:0;
+  list-style: none;
+  border: 1px solid #c0c0c0;
+  margin: 0;
 }
 
-.menu li, .submenu li {
-    position: relative;
-    border-right: 1px solid #c0c0c0;
+.menu li,
+.submenu li {
+  position: relative;
+  border-right: 1px solid #c0c0c0;
 }
 
-.submenu li a{
-    color:white;
-    text-decoration:none;
-    padding:5px 10px; 
-    display:block;
+.submenu li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
 }
 
-.submenu li a:hover{
-    background: #333; 
-    color: #fff;
-    text-shadow:0px 0px 5px #fff;
+.submenu li a:hover {
+  background: #333;
+  color: #fff;
+  text-shadow: 0px 0px 5px #fff;
 }
 
-.menu li ul{
-    position: absolute;
+.menu li ul {
+  position: absolute;
 }
