@@ -5,7 +5,7 @@ Yellow = #ffaa00
 */
 
 * {
-  margin: 0 auto;
+  margin: 0;
   outline: none;
   font-family: "Roboto", sans-serif;
 }
@@ -22,9 +22,8 @@ header {
   background-color: #1541b1;
   height: 60px;
   display: flex;
-  width: 100%;
+  width: 100vw;
   justify-content: space-between;
-  margin: 0 auto;
   margin-bottom: 8px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -60,10 +59,10 @@ header button h4 {
 
 nav {
   display: flex;
-  align-items: right;
+  align-items: center;
   justify-content: center;
-  width: 45%;
-  margin-left: 60%;
+  width: 50%;
+  margin-left: 56%;
 }
 
 .menu {
@@ -110,24 +109,35 @@ nav {
   text-align: center;
 }
 
-.menu li ul li a{
+.menu li ul li a {
   text-align: left;
 }
 
-.containerWelcome{
+nav form input[type="text"] {
+  margin-left: 31%;
+  padding: 8px 6px 8px 6px;
+  border-radius: 5px;
+  border: none;
+}
+
+.containerWelcome {
   display: flex;
+  width: 100vw;
+  height: 85vh;
+  padding-bottom: 1%;
 }
 
-.title{
+.containerWelcome .title {
   text-align: center;
-  margin-top: 4%;
+  margin-top: 10%;
+  margin-left: 5%;
 }
 
-#corTitle{
-  color: #CF8B06;
+.containerWelcome #corTitle {
+  color: #cf8b06;
 }
 
-.title h2{
+.containerWelcome .title h2 {
   color: white;
   font-size: 72pt;
   text-align: left;
@@ -135,21 +145,107 @@ nav {
   margin-bottom: -21px;
 }
 
-.title p{
+.containerWelcome .title p {
   color: white;
   font-size: 20pt;
   text-align: left;
   margin-left: 10%;
   margin-top: 18px;
-  
+  width: 80%;
+  margin-bottom: 2%;
 }
 
-.title button{
-  /* display: flex; */
-  color: #CF8B06;
+.containerWelcome button {
+  display: flex;
+  width: 45%;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  margin-left: 25%;
+  background-color: #ffaa00;
+  font-size: 16pt;
+  color: white;
+  padding: 12px 10px 12px 10px;
+  transition: 200ms;
 }
 
-.mainImage{
-  width: 520px;
-  
+.containerWelcome button:hover {
+  background-color: #fab833;
+  cursor: pointer;
+  font-size: 17pt;
+  transition: 200ms;
+}
+
+.containerWelcome button img {
+  height: 40px;
+  margin-left: 3%;
+}
+
+.containerWelcome h4 {
+  margin-left: 8%;
+}
+
+.mainImage {
+  width: 60%;
+  height: 100%;
+}
+.containerServices {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  background-color: rgb(43, 56, 243);
+}
+
+.containerServices h3 {
+  font-size: 36pt;
+  padding-top: 1%;
+}
+
+.containerServices h4 {
+  font-size: 14pt;
+  padding-bottom: 1%;
+}
+
+.gridGlobal {
+  margin-bottom: 1%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.gridSon {
+  display: flex;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  align-items: center;
+}
+
+.box-container {
+  margin-left: 2%;
+  width: 400px;
+  height: 400px;
+  border-radius: 8px;
+  background-color: #ffaa00;
+}
+
+.box-container img {
+  height: 330px;
+  width: 330px;
+  transition: 200ms;
+}
+
+.box-container img:hover {
+  opacity: 70%;
+  height: 340px;
+  width: 340px;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.box-container h2 {
+  margin-top: -10px;
+}
+
+footer {
+  width: 100vw;
 }
