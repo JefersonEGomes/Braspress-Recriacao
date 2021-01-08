@@ -6,7 +6,6 @@ Yellow = #ffaa00
 
 * {
   margin: 0 auto;
-  padding: 0;
   outline: none;
   font-family: "Roboto", sans-serif;
 }
@@ -62,46 +61,55 @@ header button h4 {
 nav {
   display: flex;
   align-items: right;
-  justify-content: right;
+  justify-content: center;
+  width: 40%;
+  margin-left: 60%;
 }
 
-.menu{
-  list-style:none;
-  border:1px solid white;
-  float:left;
-  }
+.menu {
+  list-style: none;
+  float: left;
+  border: none;
+}
 
-.menu li{
-    position:relative;
-    float:left;
-    border-right:1px solid #c0c0c0;
-    }
+.menu li {
+  position: relative;
+}
 
-.menu li a{
-  color:#333; 
-  text-decoration:none; 
-  padding:5px 10px; 
-  display:block;}
+.menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 5px;
+  display: block;
+}
 
+.menu li a:hover {
+  color: #fff;
+  text-shadow: 0px 0px 2px #fff;
+}
 
-.menu li a:hover{
-    background:#333;
-    color:#fff;
-    text-shadow:0px 0px 5px #fff;
-    }
+.menu li ul {
+  position: absolute;
+  top: 28px;
+  right: 10px;
+  left: -50px;
+  display: none;
+  background-color: #ffaa00;
+  width: 200px;
+  border-radius: 5px;
+}
 
-.menu li  ul{
-    position:absolute;
-    top:25px;
-    left:0;
-    background-color:#fff;
-    display:none;
-    }
+.menu li:hover ul,
+.menu li.over ul {
+  display: block;
+}
 
-.menu li:hover ul, .menu li.over ul{display:block;}
+.menu li ul li {
+  display: block;
+  width: 200px;
+  text-align: center;
+}
 
-.menu li ul li{
-  border:1px solid #c0c0c0;
-  display:block;
-  width:150px;
-  }
+.menu li ul li a{
+  text-align: left;
+}
