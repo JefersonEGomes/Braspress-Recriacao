@@ -1,22 +1,90 @@
-
 /* 
 Blue Solid = #1541B1
 Blue Liight = #184FDD
-Yellow = #CF8B06
+Yellow = #ffaa00
 */
 
-*{
-    margin: 0 auto;
-    outline: none;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+* {
+  margin: 0 auto;
+  outline: none;
+  font-family: "Roboto", sans-serif;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-body{
-    background-color: rgb(146, 142, 142);
+body {
+  background-color: #184FDD;
 }
 
+header {
+  background-color: #1541b1;
+  height: 60px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  box-shadow: 2px 2px 2px 1px #1b4ecf9a;
+  
+}
+
+header img {
+    margin-left: 1%;
+}
+
+header a {
+    margin-right: 1%;
+}
+
+header button{
+    padding: 10px 14px 10px 14px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffaa00;
+}
+
+header button:hover{
+    background-color: #fab833;
+    cursor: pointer;
+}
+
+header button h4 {
+    font-size: 11pt;
+    color: white;
+}
+
+nav {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+}
+
+.menu {
+    list-style: none;
+    border: 1px solid #c0c0c0;
+    margin:0;
+}
+
+.menu li, .submenu li {
+    position: relative;
+    border-right: 1px solid #c0c0c0;
+}
+
+.submenu li a{
+    color:white;
+    text-decoration:none;
+    padding:5px 10px; 
+    display:block;
+}
+
+.submenu li a:hover{
+    background: #333; 
+    color: #fff;
+    text-shadow:0px 0px 5px #fff;
+}
+
+.menu li ul{
+    position: absolute;
+}
