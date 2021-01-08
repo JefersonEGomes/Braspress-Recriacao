@@ -113,3 +113,42 @@ nav {
 .menu li ul li a{
   text-align: left;
 }
+
+.containerWelcome{
+  display: flex;
+}
+
+.title{
+  text-align: center;
+  margin-top: 4%;
+}
+
+#corTitle{
+  color: #CF8B06;
+}
+
+.title h2{
+  color: white;
+  font-size: 72pt;
+  text-align: left;
+  margin-left: 10%;
+  margin-bottom: -21px;
+}
+
+.title p{
+  color: white;
+  font-size: 20pt;
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 18px;
+  
+}
+
+.title button{
+  /* display: flex; */
+  color: #CF8B06;
+}
+
+.mainImage{
+  width: 520px;
+}
